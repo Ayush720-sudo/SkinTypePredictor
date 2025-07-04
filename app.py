@@ -6,7 +6,7 @@ from sklearn.tree import DecisionTreeClassifier
 # Load the CSV directly
 @st.cache_data
 def load_data_and_train_model():
-    data = pd.read_csv(r"C:\Users\HP\Downloads\extended_skin_data.csv"
+    data = pd.read_csv(r"C:\Users\HP\Downloads\extended_skin_data.csv")
 
     X = data.drop("skin_type", axis=1)
     y = data["skin_type"]
